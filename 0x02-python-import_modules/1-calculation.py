@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from calculator_1 import div, mul, add, sub
-
 if __name__ == '__main__':
+    from calculator_1 import div, mul, add, sub
+
     a = 10
     b = 5
     print("{} / {} = {}".format(a, b, div(a, b)))
