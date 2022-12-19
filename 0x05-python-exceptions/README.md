@@ -36,67 +36,61 @@ In this project generally, I learn;
 
 **1. Safe printing of an integers list**
 * [1-safe_print_integer.py](./1-safe_print_integer.py): python function that prints an integer with `"{:d}".format()`.
-  * the parameter `value` can be any type (integer, string, etc.)
-	* The integer printed is followed by a new line
-	* it returns `True` if `value` has been correctly printed (which means the `value` is an integer). Otherwise,it returns `False`
-	* use of `try: / except:` is required
-	* the `"{:d}".format()` is used to print as integer
-	* it is not allowed to import any module
-	* it is not allowed to use `type()`
+	- the parameter `value` can be any type (integer, string, etc.)
+	- The integer printed is followed by a new line
+	- it returns `True` if `value` has been correctly printed (which means the `value` is an integer). Otherwise,it returns `False`
+	- use of `try: / except:` is required
+	- the `"{:d}".format()` is used to print as integer
+	- it is not allowed to import any module
+	- it is not allowed to use `type()`
 
 **2. Print and count integers**
-
 * [2-safe_print_list_integers.py](./2-safe_print_list_integers.py): python function that prints the first `x` elements of a list and only integers.
-  * parameter `my_list` can contain any type (integer, string, etc.)
-	* All integers are printed on the same line followed by a new line - other type of value in the list are skipped (in silence).
-	* `x` represents the number of elements to access in `my_list`
-	* `x` can be bigger than the length of `my_list` - if it’s the case, an exception occurs
-	* it returns the real number of integers printed
-	* `try: / except:` have been used as required
-	* `"{:d}".format()` have been used to print an integer
-	* no any module is imported as required
-	* the `len()` is not used as required
+	- parameter `my_list` can contain any type (integer, string, etc.)
+	- All integers are printed on the same line followed by a new line - other type of value in the list are skipped (in silence).
+	- `x` represents the number of elements to access in `my_list`
+	- `x` can be bigger than the length of `my_list` - if it’s the case, an exception occurs
+	- it returns the real number of integers printed
+	- `try: / except:` have been used as required
+	- `"{:d}".format()` have been used to print an integer
+	- no any module is imported as required
+	- the `len()` is not used as required
 	
 **3. Integers division with debug**
-
 * [3-safe_print_division.py](./3-safe_print_division.py): python function that divides 2 integers and prints the result.
- * parameters `a` and `b` are assumed to be integers
- * The result of the division is prints on the `finally:` section preceded by `Inside result:`
- * it returns the value of the division, otherwise: `None`
- * the`try: / except: / finally:` have been used
- * the `"{}".format()` have been used to print the result
- * it is not allowed to import any module
+	- parameters `a` and `b` are assumed to be integers
+	- The result of the division is prints on the `finally:` section preceded by `Inside result:`
+	- it returns the value of the division, otherwise: `None`
+	- the`try: / except: / finally:` have been used
+	- the `"{}".format()` have been used to print the result
+	- it is not allowed to import any module
 
 **4. Divide a list**
-
 * [4-list_division.py](./4-list_division.py): python function that divides element by element 2 lists.
-  - parameters `my_list_1` and `my_list_2` can contain any type (integer, string, etc.)
+	- parameters `my_list_1` and `my_list_2` can contain any type (integer, string, etc.)
 	- parameter `list_length` can be bigger than the length of both lists
 	- it returns a new list (length = `list_length`) with all divisions
 	- If 2 elements can’t be divided, the division result equals `0`.
 	- If an element is not an integer or float:
-	  - it prints: `wrong type`
-  - If the division can’t be done (`/0`):
-	  - it prints: `division by 0`
+		- it prints: `wrong type`
+	- If the division can’t be done (`/0`):
+		- it prints: `division by 0`
 	- If `my_list_1` or `my_list_2` is too short
-	  - it prints: `out of range`
+		- it prints: `out of range`
 	- the `try: / except: / finally:` have been used
 	- it is not allowed to import any module
 
 **5. Raise exception**
-
 * [5-raise_exception.py](./5-raise_exception.py): python function that raises a type exception.
-  - it is not allowed to import any module
+	- it is not allowed to import any module
 
 **6. Raise a message**
-
 * [6-raise_exception_msg.py](./6-raise_exception_msg.py): python function that raises a name exception with a message.
-  - it is not allowed to import any module
+	- it is not allowed to import any module
 
 **7. Safe integer print with error message**
-
 * [100-safe_print_integer_err.py](./100-safe_print_integer_err.py): python function that prints an integer.
-  - parameter `value` can be any type (integer, string, etc.)
+	- parameter `value` can be any type (integer, string, etc.)
 	- The integer printed is followed by a new line
 	- it returns `True` if `value` has been correctly printed (which means the `value` is an integer). Otherwise, it returns `False` and prints in `stderr` the error precede by `Exception:`
 	- the `try: / except:` has been used as required
@@ -105,17 +99,15 @@ In this project generally, I learn;
 
 **8. Safe function**
 * [101-safe_function.py](./101-safe_function.py): python function that executes a function safely.
-  - it is assume that `fct` will be always a pointer to a function
+	- it is assume that `fct` will be always a pointer to a function
 	- it returns the result of the function,
 	- Otherwise,it returns `None` if something happens during the function and prints in `stderr` the error precede by `Exception:`
 	- the `try: / except:` have been used as required
 
 **9. ByteCode -> Python #4**
-
 * [102-magic_calculation.py](./102-magic_calculation.py): python function `def magic_calculation(a, b):` that does exactly the same as the output Python bytecode given by ALX SE program.
 
 **10. CPython #2: PyFloatObject**
-
 * [103-python.c](./103-python.c):  C functions that print some basic info about Python lists, Python bytes an Python float objects.
 
 ## Files and Function prototypes :file_folder:
