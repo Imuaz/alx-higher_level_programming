@@ -26,48 +26,48 @@ In this project generally, I learn;
 **0. Safe list printing**
 
 * [0-safe_print_list.py](./0-safe_print_list.py): python function that prints `x` elements of a list.
-  - parameter  `my_list` can contain any type (integer, string, etc.)
-	- All elements are printed on the same line followed by a new line.
-	- `x` represents the number of elements to print
-	- `x` can be bigger than the length of `my_list`
-	- it returns the real number of elements printed
-	- the use of `try: / except:` is mandatory
-	- it is not allowed to import any module
-	- the use of `len()` is not allowed
+  * parameter  `my_list` can contain any type (integer, string, etc.)
+	* All elements are printed on the same line followed by a new line.
+	* `x` represents the number of elements to print
+	* `x` can be bigger than the length of `my_list`
+	* it returns the real number of elements printed
+	* the use of `try: / except:` is mandatory
+	* it is not allowed to import any module
+	* the use of `len()` is not allowed
 
 **1. Safe printing of an integers list**
 
 * [1-safe_print_integer.py](./1-safe_print_integer.py): python function that prints an integer with `"{:d}".format()`.
-  - the parameter `value` can be any type (integer, string, etc.)
-	- The integer printed is followed by a new line
-	- it returns `True` if `value` has been correctly printed (which means the `value` is an integer). Otherwise,it returns `False`
-	- use of `try: / except:` is required
-	- the `"{:d}".format()` is used to print as integer
-	- it is not allowed to import any module
-	- it is not allowed to use `type()`
+  * the parameter `value` can be any type (integer, string, etc.)
+	* The integer printed is followed by a new line
+	* it returns `True` if `value` has been correctly printed (which means the `value` is an integer). Otherwise,it returns `False`
+	* use of `try: / except:` is required
+	* the `"{:d}".format()` is used to print as integer
+	* it is not allowed to import any module
+	* it is not allowed to use `type()`
 
 **2. Print and count integers**
 
 * [2-safe_print_list_integers.py](./2-safe_print_list_integers.py): python function that prints the first `x` elements of a list and only integers.
-  - parameter `my_list` can contain any type (integer, string, etc.)
-	- All integers are printed on the same line followed by a new line - other type of value in the list are skipped (in silence).
-	- `x` represents the number of elements to access in `my_list`
-	- `x` can be bigger than the length of `my_list` - if it’s the case, an exception occurs
-	- it returns the real number of integers printed
-	- `try: / except:` have been used as required
-	- `"{:d}".format()` have been used to print an integer
-	- no any module is imported as required
-	- the `len()` is not used as required
+  * parameter `my_list` can contain any type (integer, string, etc.)
+	* All integers are printed on the same line followed by a new line - other type of value in the list are skipped (in silence).
+	* `x` represents the number of elements to access in `my_list`
+	* `x` can be bigger than the length of `my_list` - if it’s the case, an exception occurs
+	* it returns the real number of integers printed
+	* `try: / except:` have been used as required
+	* `"{:d}".format()` have been used to print an integer
+	* no any module is imported as required
+	* the `len()` is not used as required
 	
 **3. Integers division with debug**
 
 * [3-safe_print_division.py](./3-safe_print_division.py): python function that divides 2 integers and prints the result.
-  - parameters `a` and `b` are assumed to be integers
-	- The result of the division is prints on the `finally:` section preceded by `Inside result:`
-	- it returns the value of the division, otherwise: `None`
-	- the`try: / except: / finally:` have been used
-	- the `"{}".format()` have been used to print the result
-	- it is not allowed to import any module
+ * parameters `a` and `b` are assumed to be integers
+ * The result of the division is prints on the `finally:` section preceded by `Inside result:`
+ * it returns the value of the division, otherwise: `None`
+ * the`try: / except: / finally:` have been used
+ * the `"{}".format()` have been used to print the result
+ * it is not allowed to import any module
 
 **4. Divide a list**
 
