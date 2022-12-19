@@ -24,16 +24,15 @@ In this project generally, I learn;
 ## Tasks :page_with_curl:
 
 **0. Safe list printing**
-
-* [0-safe_print_list.py](./0-safe_print_list.py): python function that prints `x` elements of a list.
-  * parameter  `my_list` can contain any type (integer, string, etc.)
-	* All elements are printed on the same line followed by a new line.
-	* `x` represents the number of elements to print
-	* `x` can be bigger than the length of `my_list`
-	* it returns the real number of elements printed
-	* the use of `try: / except:` is mandatory
-	* it is not allowed to import any module
-	* the use of `len()` is not allowed
+- [0-safe_print_list.py](./0-safe_print_list.py): python function that prints `x` elements of a list.
+	- parameter  `my_list` can contain any type (integer, string, etc.)
+	- All elements are printed on the same line followed by a new line.
+	- `x` represents the number of elements to print
+	- `x` can be bigger than the length of `my_list`
+	- it returns the real number of elements printed
+	- the use of `try: / except:` is mandatory
+	- it is not allowed to import any module
+	- the use of `len()` is not allowed
 
 **1. Safe printing of an integers list**
 
