@@ -35,7 +35,6 @@ In this project generally, I learn;
 	- the use of `len()` is not allowed
 
 **1. Safe printing of an integers list**
-
 * [1-safe_print_integer.py](./1-safe_print_integer.py): python function that prints an integer with `"{:d}".format()`.
   * the parameter `value` can be any type (integer, string, etc.)
 	* The integer printed is followed by a new line
