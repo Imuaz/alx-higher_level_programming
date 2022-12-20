@@ -2,6 +2,9 @@
 
 """Define a class Square."""
 
+
 class Square:
-    """Square class"""
+    """
+    Square class
+    """
     pass
