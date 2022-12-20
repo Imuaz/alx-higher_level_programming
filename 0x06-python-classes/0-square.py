@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 class Square:
-    pass  # An empty block
+    def __init__(self, name):"""defined class"""
+        self.name = name
 
 p = Square()
 print(p)
