@@ -5,11 +5,9 @@
 
 class Square:
     """
-    An empty block
-    """
-    pass
-    """
-    instantiating Square attributes
+    class square that has attributes:
+        size
+    some attributes are protected from input.
     """
     def __init__(self, size=0):
         """
