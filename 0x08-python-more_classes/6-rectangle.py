@@ -15,7 +15,7 @@ class Rectangle:
             width (int): the rectanangle width
             height (int): the rectanangle height
         """
-type(self).number_of_instances += 1
+        Rectanagle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -84,5 +84,5 @@ type(self).number_of_instances += 1
         """method: __del__
            deletes instance of Rectangle , and prints "Bye rectangle..."
         """
-type(self).number_of_instances += 1
+        Rectanagle.number_of_instances += 1
         print("Bye rectangle...")
