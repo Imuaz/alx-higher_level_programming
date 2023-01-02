@@ -65,10 +65,7 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __repr__(self):
-        """ provides __repr__ method for object when repr()
-            is called, or eval().
-        """
-        string = "Rectangle("
-        string += str(self.width)
-        string += ", " + str(self.height) + ")"
-        return string
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
