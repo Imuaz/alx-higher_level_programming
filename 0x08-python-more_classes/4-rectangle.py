@@ -64,6 +64,15 @@ class Rectangle:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
+    def __str__(self):
+        """the string that returns a rectangle with character #
+        """
+        rep_str = ""
+        if self.__width != 0 and self.__height != 0:
+            rep_str += "\n".join("#" * self.__width
+                                 for i in range(self.__height))
+        return rep_str
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
