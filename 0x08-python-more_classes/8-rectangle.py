@@ -68,20 +68,18 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
-    def bigger_or_equal(r_angle1, r_angle2):
+    def bigger_or_equal(rect_1, rect_2):
         """
-        Return the Rectangle with the greater area.
-        Args:
-        r_angle1 (Rectangle): The first Rectangle.
-        r_angle2 (Rectangle): The second Rectangle.
+        returns biggest rectangle based on area
         """
-        if not isinstance(r_angle1, Rectangle):
-            raise TypeError("r_angle1 must be an instance of Rectangle")
-        if not isinstance(r_angle2, Rectangle):
-            raise TypeError("r_angle2 must be an instance of Rectangle")
-        if r_angle1.area() >= r_angle2.area():
-            return (r_angle1)
-        return (r_angle2)
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_2.area() > rect_1.area():
+            return rect_2
+        else:
+            return rect_1
 
     def __str__(self):
         """the string that returns a rectangle with character #
