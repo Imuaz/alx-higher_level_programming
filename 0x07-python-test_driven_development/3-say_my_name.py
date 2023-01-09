@@ -1,30 +1,19 @@
 #!/usr/bin/python3
-'''
-module: say_my_name
-'''
+"""
+Module say_my_name
+Prints a given first name and last name.
+"""
 
 
-def say_my_name(first_name, last_name=''):
-    ''' print first and last name, make the big bucks
-    Keyword arguments:
-    first_name -- string
-    last_name -- string
-    '''
+def say_my_name(first_name, last_name=""):
+    """Prints a string with <first_name>
+    and <last_name>.
+    """
 
-    #  ERROR MESSAGE DICT  #
-    err_msg = {}
-    err_msg["FirstNotStr"] = "first_name must be a string"
-    err_msg["LastNotStr"] = "last_name must be a string"
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
 
-    #  TESTS  #
-    if type(first_name) != str:
-        raise TypeError(err_msg["FirstNotStr"])
-    if type(last_name) != str:
-        raise TypeError(err_msg["LastNotStr"])
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
 
-    #  OUTPUT  #
-    print("My name is {}".format(first_name), end='')
-    if len(last_name) == 0:
-        print()
-    else:
-        print(" {}".format(last_name))
+    print("My name is {} {}".format(first_name, last_name))
