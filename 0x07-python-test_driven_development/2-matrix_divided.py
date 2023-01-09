@@ -4,6 +4,8 @@ This is the "2-matrix_divided" module.
 The 2-matrix_divided module functions: matrix_divided(a, b).
 """
 
+s1 = "matrix must be a matrix (list of lists) of integers/floats"
+
 
 def matrix_divided(matrix, div):
     """
@@ -28,8 +30,7 @@ def matrix_divided(matrix, div):
             raise TypeError("Each row of the matrix must have the same size")
         for i in a:
             if type(i) is not int and type(i) is not float:
-                raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(s1)
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
     if div == 0:
