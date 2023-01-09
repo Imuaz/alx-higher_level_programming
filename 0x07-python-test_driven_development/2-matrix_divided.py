@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
+"""
+This is the "2-matrix_divided" module.
+The 2-matrix_divided module functions: matrix_divided(a, b).
+"""
+
+
 def matrix_divided(matrix, div):
-    """
     matrix_divided: divides all elements of a matrix
     Args:
         matrix (int, float):  list of lists of integers or floats
