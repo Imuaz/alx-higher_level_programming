@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+The print_square module provides a simple function print_square()
+which prints a square with # character.
+"""
+
 
 def print_square(size):
     """Prints square with #.
