@@ -1,7 +1,8 @@
 #!/usr/bin/node
-let array = process.argv[2];
-if(array === undefined){
+const process = require('process');
+let arg = process.argv[2];
+if (arg === undefined) {
   console.log('No argument');
-}else {
-  console.log(array);
+} else {
+  console.log(arg);
 }
