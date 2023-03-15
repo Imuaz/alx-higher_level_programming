@@ -17,3 +17,4 @@ This repository contains programs written for the highe-level programming track 
 * [0x0C. Python - Almost a circle](./0x0C-python-almost_a_circle)
 * [0x0D. SQL - Introduction](./0x0D-SQL_introduction)
 * [0x0E. SQL - More queries](./0x0E-SQL_more_queries)
+* [0x12. JavaScript - Warm up](./0x12-javascript-warm_up)
