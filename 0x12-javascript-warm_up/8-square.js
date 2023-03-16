@@ -6,8 +6,7 @@ if (isNaN(x)) {
   let i = 0;
   while (i < x) {
     let element = '';
-    for (let j = 0; j < x; j ++)
-      element += 'X';
+    for (let j = 0; j < x; j ++) element += 'X';
     console.log(element);
     i++;
   }
