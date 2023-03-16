@@ -1,2 +1,2 @@
-#!/usr/bin/ode
+#!/usr/bin/node
 myVar = 333;
