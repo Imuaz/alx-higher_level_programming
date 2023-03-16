@@ -1,5 +1,5 @@
 #!/usr/bin/node
-exports.esrever = function (list) {
+/*exports.esrever = function (list) {
   const reverseList = [];
   let i = list.length -1;
   while (i >= 0) {
@@ -7,4 +7,10 @@ exports.esrever = function (list) {
     i--;
   }
   return reverseList;
+};*/
+exports.esrever = function (list) {
+  return list.reduceRight(function (array, current) {
+    array.push(current);
+    return array;
+  }, []);
 };
