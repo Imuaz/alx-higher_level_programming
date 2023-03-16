@@ -12,10 +12,8 @@ module.exports = class Rectangle {
     let outputs = '';
     while (i < this.height) {
       i++;
-      let j = 0;
-      while (j < this.width) {
+      for (let j = 0; j < this.width; j++) {
         outputs = outputs + 'X';
-        j++;
       }
       console.log(outputs);
       outputs = '';
