@@ -10,6 +10,7 @@ if __name__ == '__main__':
     if len(args) < 5:
         print("Usage: {} username password db_name state_name".format(args[0]))
         exit(1)
+        statename = args[4]
 
     # connect to database and set up user input variables
     db = MySQLdb.connect(host='localhost', user=args[1],
@@ -25,7 +26,7 @@ if __name__ == '__main__':
         ''')
     rows = cur.fetchall()
     # get cities from all rows matching state name
-    cities = [row[1] for row in rows if args[4] == row[2]]
+    cities = [row[1] for row in rows if statename == row[2]]
     num_cities = len(cities)
     # print cities out using custom ends to format output
     for i, city in enumerate(cities):
