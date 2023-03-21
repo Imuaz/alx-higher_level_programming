@@ -1,36 +1,21 @@
 #!/usr/bin/python3
-"""script for use in getting all states from sql db
 """
-import MySQLdb
-import sys
+lists all cities from the database hbtn_0e_4_usa
+"""
+if __name__ == "__main__":
 
+    import MySQLdb
+    from sys import argv
 
-if __name__ == '__main__':
-    args = sys.argv
-    if len(args) < 5:
-        print("Usage: {} username password db_name state_name".format(args[0]))
-        exit(1)
-        statename = args[4]
-
-    # connect to database and set up user input variables
-    db = MySQLdb.connect(host='localhost', user=args[1],
-                         passwd=args[2], db=args[3],
-                         port=3306)
-    cur = db.cursor()
-    # execute sql join statement to gather states and cities
-    num_rows = cur.execute('''
-        SELECT cities.id, cities.name, states.name
-        FROM cities INNER JOIN states
-        ON cities.state_id=states.id
-        ORDER BY cities.id ASC
-        ''')
-    rows = cur.fetchall()
-    # get cities from all rows matching state name
-    cities = [row[1] for row in rows if statename == row[2]]
-    num_cities = len(cities)
-    # print cities out using custom ends to format output
-    for i, city in enumerate(cities):
-        if i == num_cities - 1:
-            print(city)
-        else:
-            print(city, end=", ")
+    conect = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                             passwd=argv[2], db=argv[3], charset="utf8")
+    cursor = conect.cursor()
+    cursor.execute("""SELECT cities.id, cities.name, states.name
+    FROM cities
+    LEFT JOIN states ON cities.state_id = states.id
+    ORDER BY cities.id ASC""")
+    query_rows = cursor.fetchall()
+    for row in query_rows:
+        print(row)
+    cursor.close()
+    conect.close()
