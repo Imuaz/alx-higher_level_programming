@@ -61,7 +61,7 @@ The project covers various topics related to URLs and HTTP, starting with their 
   - the script is tested in the sandbox provided, using the web server running on port 5000
 
 **6. Find a peak**
-- [6-peak.py](./6-peak.py): function that finds a peak in a list of unsorted integers.
+- [6-peak.py](./6-peak.py): function that finds **a peak** in a list of unsorted integers.
   - it uses a prototype: `def find_peak(list_of_integers):`
   - it has not imported any module
   - The algorithm have the lowest complexity (No need to go through all numbers to find a peak)
