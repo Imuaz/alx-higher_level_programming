@@ -12,7 +12,7 @@ In addition, the project explains the official Python coding style and how to ch
 
 The following are some resources used for the project:
 - [The Python tutorial](https://docs.python.org/3/tutorial/index.html)
-- [The Python Guru](./https://thepythonguru.com/)
+- [The Python Guru](https://thepythonguru.com/)
 - [How To Use String Formatters in Python 3](https://realpython.com/python-f-strings/)
 - [Learn to Program](https://youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 - [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
