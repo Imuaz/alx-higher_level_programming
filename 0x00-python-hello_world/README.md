@@ -108,3 +108,17 @@ Namespaces are one honking great idea -- let's do more of those!
     - followed by the 9 first characters of `str` followed by a new line
   - it is not allowed to use any loops or conditional statement
   - the program should be maximum 5 lines long
+
+**6. Play with strings**
+- [6-concat.py](./6-concat.py): Python script that completes the [source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py) to print `Welcome to Holberton School!`
+  - it is not allowed to use any loops or conditional statements.
+  - it uses the variables `str1` and `str2` in the new line of the code
+  - the program is exactly 5 lines long
+
+**7. Copy - Cut - Paste**
+- [7-edges.py](./7-edges.py): The completion of the [source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py)
+  - the program is exactly 8 lines long
+  - `word_first_3` contains the first 3 letters of the variable `word`
+  - `word_last_2` contains the last 2 letters of the variable `word`
+  - `middle_word` contains the value of the variable `word` without the first and last letters
+  - it is not allowed to use any loops or conditional statements
