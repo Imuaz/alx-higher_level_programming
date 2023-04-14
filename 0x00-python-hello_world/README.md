@@ -122,3 +122,21 @@ Namespaces are one honking great idea -- let's do more of those!
   - `word_last_2` contains the last 2 letters of the variable `word`
   - `middle_word` contains the value of the variable `word` without the first and last letters
   - it is not allowed to use any loops or conditional statements
+
+**8. Create a new sentence**
+- [8-concat_edges.py](./8-concat_edges.py): the completion of the [source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py) to print `object-oriented programming with Python`, followed by a new line.
+  - it is not allowed to use any loops or conditional statements
+  - the program is exactly 5 lines long
+  - it is not allowed to create new variables
+
+**9. Easter Egg**
+- [9-easter_egg.py](./9-easter_egg.py): Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+  - the script has the maximum 98 characters long (please check with `wc -m 9-easter_egg.py`)
+
+**10. Linked list cycle**
+- [10-check_cycle.c](./10-check_cycle.c): C function that checks if a singly linked list has a cycle in it.
+  - it uses Prototype: `int check_cycle(listint_t *list);`
+  - Returns: `0` if there is no cycle, `1` if there is a cycle
+  - it requires these functions: `write`, `printf`, `putchar`, `puts`, `malloc`, `free` Only
+  - [lists.h](./lists.h):
+
