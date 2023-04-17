@@ -138,5 +138,28 @@ Namespaces are one honking great idea -- let's do more of those!
   - it uses Prototype: `int check_cycle(listint_t *list);`
   - Returns: `0` if there is no cycle, `1` if there is a cycle
   - it requires these functions: `write`, `printf`, `putchar`, `puts`, `malloc`, `free` Only
-  - [lists.h](./lists.h):
+  - [lists.h](./lists.h): header file that contains prototypes of all functions and the structure used in the file `10-check_cycle.c`.
 
+**11. Hello, write**
+- [100-write.py](./100-write.py): Python script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.
+  - It uses the function `write` from the `sys` module
+  - it is not allowed to use `print`
+  - the script print to `stderr`
+  - it exits with the status code `1`
+
+**12. Compile**
+- [101-compile](./101-compile): A script that compiles a Python script file.
+  - It stores the Python file name in the environment variable `$PYFILE`
+  - The output filename will be `$PYFILEc` (ex: `export PYFILE=my_main.py` => output filename: `my_main.pyc`)
+
+**13. ByteCode -> Python #1**
+- [102-magic_calculation.py](./102-magic_calculation.py): Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
+ ```
+ 3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
+ ```
+   - **Tip:** [Python bytecode](https://docs.python.org/3.4/library/dis.html)
