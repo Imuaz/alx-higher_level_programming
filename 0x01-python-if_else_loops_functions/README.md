@@ -1,4 +1,4 @@
-# 0x01. Python - if/else, loops, functions:loop:
+# 0x01. Python - if/else, loops, functions :loop:
 
 **INTRODUCTION**
 
