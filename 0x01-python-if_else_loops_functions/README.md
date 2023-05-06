@@ -154,7 +154,7 @@ Lastly, the project covered the arithmetic operators in Python and how to use th
   - For numbers which are multiples of both three and five, it prints `FizzBuzz`.
   - Prototype: `def fizzbuzz():`
   - Each element is followed by a space
-  - no to any module is imported
+  - no any module is imported
 
 **13. Insert in sorted linked list**
 - [13-insert_number.c](./13-insert_number.c): C function that inserts a number into a sorted singly linked list.
@@ -164,7 +164,7 @@ Lastly, the project covered the arithmetic operators in Python and how to use th
 |File|Prototype/Struc|
 |----|---------------|
 |`13-insert_number.c`|`listint_t *insert_node(listint_t **head, int number);`
- `struct listint_s`|
+ ||`struct listint_s`|
 
 **14. Smile in the mirror**
 - [100-print_tebahpla.py](./100-print_tebahpla.py): a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line.
