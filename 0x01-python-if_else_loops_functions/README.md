@@ -29,3 +29,38 @@ Lastly, the project covered the arithmetic operators in Python and how to use th
 - The length your files will be tested using `wc`
 
 **C Scripts**
+- Allowed editors: `vi`, `vim`, `emacs`
+- All files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- All files should end with a new line
+- The code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+- It is not allowed to use global variables
+- No more than 5 functions per file
+- The prototypes of all the functions should be included in a header file called `lists.h`
+- the header file should be pushed to the repo
+- The header files should be include guarded
+
+## Tasks:page_with_curl:
+
+**0. Positive anything is better than negative nothing**
+- [0-positive_or_negative.py](./0-positive_or_negative.py): The completion of a [program](https://github.com/holbertonschool/0x01.py) that assigns a random signed number to the variable `number` each time it is executed.It prints whether the number stored in the variable `number` is positive or negative.
+  - The variable `number` stores a different value every time this program runs
+  - No need to understand what `import`, `random.randint` do.
+  - The output of the program should be:
+    - The number, followed by
+      1. if the number is greater than 0: `is positive`
+      2. if the number is 0: `is zero`
+      3. if the number is less than 0: `is negative`
+    - followed by a new line
+
+**1. The last digit**
+- [1-last_digit.py](./1-last_digit.py): The completion of the [program](https://github.com/holbertonschool/0x01.py) that assigns a random signed number to the variable `number` each time it is executed. It prints the last digit of the number stored in the variable `number`.
+  - The variable `number` stores a different value every time this program runs
+  - No need to understand what `import`, random.`randint` do. The line: `number = random.randint(-10000, 10000)` should not be changed.
+  - The output of the program should be:
+    - The string `Last digit of`, followed by
+    - the number, followed by
+    - the string `is`, followed by the last digit of `number`, followed by
+      1. if the last digit is greater than 5: the string `and is greater than 5`
+      2. if the last digit is 0: the string `and is 0`
+      3. if the last digit is less than 6 and not 0: the string `and is less than 6 and not 0`
+    - followed by a new line
