@@ -2,6 +2,10 @@
 
 The project covers various topics related to URLs and HTTP, starting with their definitions and moving on to their components, including scheme, domain name, sub-domain, port number, and query string. It also covers HTTP request and response components, including headers and message body, request methods, and response status codes. In addition, the project explains HTTP Cookies, making requests with cURL, and the application-level processes that occur when typing a URL into a browser. Overall, this project provides a comprehensive understanding of URLs and HTTP.
 
+## Resources:books:
+
+- [HTTP (HyperText Transfer Protocol)](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html) _(except: “TRACE” Request Method, “CONNECT” Request Method, Language Negotiation and “Options MultiView” and Character Set Negotiation)_
+- [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 ## Requirements :pushpin:
 
 **General**
@@ -68,4 +72,23 @@ The project covers various topics related to URLs and HTTP, starting with their 
   - the function contain in the file 6-peak.py
   - [6-peak.txt](./6-peak.txt) contain the complexity of the algorithm: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`
 
-**
+**7. Only status code**
+- [100-status_code.sh](./100-status_code.sh): Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response.
+  - it is not allowed to use any pipe, redirection, etc.
+  - it is not allowed to use `;` and `&&`
+  - it uses `curl`
+
+**8. cURL a JSON file**
+- [101-post_json.sh](./101-post_json.sh): Bash script that sends a JSON `POST` request to a URL passed as the first argument, and displays the body of the response.
+  - the script sends a `POST` request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
+  - it uses `curl`
+
+**9. Catch me if you can!**
+- [102-catch_me.sh](./102-catch_me.sh): Bash script that makes a request to `0.0.0.0:5000/catch_me` that causes the server to respond with a message containing `You got me!`, in the body of the response.
+  - it uses `curl`
+  - it is not allow to use `echo`, `cat`, etc. to display the final result
+
+- The scripts may be tested in the sandbox provided using the web server running on port 5000.
+
+    :+1:
+
