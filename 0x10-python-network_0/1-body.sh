@@ -1,3 +1,3 @@
 #!/bin/bash
-# Requests URL provided by user and displays the size of response body in bytes
-curl -Is "$1"
+# Get the response body for a given URL for 200 status code responses.
+curl -sL "$1" -w "%{http_code}\\n" | awk '/^200$/ {flag=1; next} flag'
