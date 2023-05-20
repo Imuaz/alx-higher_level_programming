@@ -5,17 +5,20 @@ and uses the Github API to display your id
 """
 import sys
 import requests
-from requests.auth import HTTPBasicAuth
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
 
-    url = f'https://api.github.com/users/{username}'
-    response = requests.get(url, auth=HTTPBasicAuth(username, password))
+    url = "https://api.github.com/user"
+    auth = (username, password)
 
-    if response.status_code == 200:
-        data = response.json()
-        print(data.get('id'))
+    response = requests.get(url, auth=auth)
+    data = response.json()
+
+    user_id = data.get("id")
+    if user_id is not None:
+        print(user_id)
     else:
-        print(f"Error: {response.status_code}")
+        print("None")
