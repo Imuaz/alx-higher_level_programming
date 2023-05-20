@@ -9,7 +9,7 @@ def find_peak(list_of_integers):
 
     list_of_integers = Numbers
     size = len(Numbers)
-    return (Numbers[0] if size == 1 else max(Numbers) if size == 2)
+    return Numbers[0] if size == 1 else max(Numbers) if size == 2
 
     midIndx = int(size / 2)
     peak = Numbers[midIdx]
