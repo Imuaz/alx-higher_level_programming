@@ -2,20 +2,22 @@
 """
 Lists the 10 most recent commits on a given GitHub repository.
 """
-import sys
 import requests
+from sys import argv
 
 
 if __name__ == "__main__":
-    repository_name = sys.argv[1]
-    repository_owner = sys.argv[2]
+    url = "https://api.github.com/repos/"
+    query = "{}/{}/commits".format(argv[2], argv[1])
 
-    url = f"https://api.github.com/repos/{repository_owner}/\
-        {repository_name}/commits"
-    response = requests.get(url)
-    commits = response.json()
+    res = requests.get(url + query)
+    res = res.json()
 
-    for commit in commits[:10]:
+    for num, commit in enumerate(res):
+        if num == 10:
+            break
+
         sha = commit["sha"]
-        author_name = commit["commit"]["author"]["name"]
-        print(f"{sha}: {author_name}")
+        autor = commit.get("commit").get("author").get("name")
+
+        print(sha + ": " + autor)
