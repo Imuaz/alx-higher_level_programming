@@ -2,12 +2,11 @@
 """Defines a peak-finding algorithm."""
 
 
-def find_peak(list_of_integers):
+def find_peak(Numbers):
     """Return a peak in a list of unsorted integers."""
     if list_of_integers == []:
         return None
 
-    list_of_integers = Numbers
     size = len(Numbers)
     return Numbers[0] if size == 1 else max(Numbers) if size == 2
 
