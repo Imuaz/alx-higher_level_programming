@@ -136,6 +136,6 @@ Print all commits by: `<sha>: <author name>` (one by line)
   - it is not allowed to import packages other than `requests` and `sys`
   - No need to check arguments passed to the script (number or type)
 
-**Be careful: only 60 requests by hour by IP for unauthenticated requests**[Rate limit](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+**Be careful: only 60 requests by hour by IP for unauthenticated requests**[Rate limit](https://docs.github.com/en/rest?apiVersion=2022-11-28).
 
-     :+1:
+   :+1:
