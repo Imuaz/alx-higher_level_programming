@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Fetches https://intranet.hbtn.io/status.
+Displays the X-Request-Id header variable of a request to a given URL.
 """
 import requests
+from sys import argv
 
 
 if __name__ == '__main__':
-    url = "https://alx-intranet.hbtn.io/status"
-    response = requests.get(url)
-    print("Body response:")
-    print(f"\t- type: {type(response.text)}")
-    print(f"\t- content: {response.text}")
+    request = requests.get(argv[1])
+    print(request.headers.get('X-Request-Id'))
