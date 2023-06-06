@@ -1,6 +1,6 @@
-# Higher-level programming - Python
+# Higher-level programming - Python, Databases & JavaScript
 
-This repository contains programs written for the highe-level programming track at ALX SE program. In these projects, which began in the end of the month three of the year one curriculum, I start to learn Python
+This repository contains programs written for the high-level programming track at the ALX SE program. These projects cover various topics and technologies including Python, MySQL, JavaScript, C, and shell scripting. The projects were started during the end of the third month of the first-year curriculum. The following is a list of projects included in this repository:
 
 * [0x00. Python - Hello, World](./0x00-python-hello_world)
 * [0x01. Python - if/else, loops, functions](./0x01-python-if_else_loops_functions)
