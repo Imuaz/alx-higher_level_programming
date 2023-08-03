@@ -15,6 +15,8 @@ The following are some resources used for the project:
 - [The Python Guru](https://thepythonguru.com/)
 - [How To Use String Formatters in Python 3](https://realpython.com/python-f-strings/)
 - [Learn to Program](https://youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+- [New string formatting](https://pyformat.info/)
+- [Python Interpreter](https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
 - [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
 
 ## Requirements:pushpin:
